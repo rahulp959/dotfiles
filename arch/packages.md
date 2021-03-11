@@ -1,5 +1,7 @@
 # My Arch Package List
 
+![Last Updated 11th March 2021](https://img.shields.io/badge/Last%20Updated-11th%20March%202021-blue)
+
 ## Core Packages
 
 * base
