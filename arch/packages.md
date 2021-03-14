@@ -40,6 +40,7 @@
 * fd (Better find)
 * ripgrep (Better Grep)
 * spotifyd (Spotify Daemon)
+* playerctl
 
 ## Fonts
 
