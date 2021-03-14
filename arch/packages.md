@@ -61,6 +61,7 @@
 
 ## Fun shit
 * sl
+* lolcat
 * neofetch (All the below are dependencies, because it's that awesome)
 * catimg
 * chafa (Image to text in shell)
