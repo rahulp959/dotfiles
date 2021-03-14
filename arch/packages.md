@@ -39,6 +39,7 @@
 * exa (Better ls)
 * fd (Better find)
 * ripgrep (Better Grep)
+* spotifyd (Spotify Daemon)
 
 ## Fonts
 
