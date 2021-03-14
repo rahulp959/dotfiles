@@ -74,7 +74,7 @@
 * xorg-xrandr (Multi monitor resolution detection)
 * xorg-xwininfo (X Window Info)
 
-![neofetch output](https://user-images.githubusercontent.com/342885/110725715-f4e99080-820f-11eb-963a-a2822f2aec1d.png)
+![image](https://user-images.githubusercontent.com/342885/111066172-8a597e80-84b5-11eb-9f3e-f10c7b9f5367.png)
 
 
 
