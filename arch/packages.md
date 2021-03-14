@@ -1,6 +1,6 @@
 # My Arch Package List
 
-![Last Updated 11th March 2021](https://img.shields.io/badge/Last%20Updated-11th%20March%202021-blue)
+![Last Updated 14th March 2021](https://img.shields.io/badge/Last%20Updated-14th%20March%202021-blue)
 
 ## Core Packages
 
@@ -24,6 +24,8 @@
 * sudo (because why would this be available by default)
 * vi (core for visudo to work)
 * pkgconf
+* cups (Print stuff!)
+* cups-pdf (Print to PDF)
 
 ## Misc tools
 
