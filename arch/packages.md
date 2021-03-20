@@ -1,6 +1,6 @@
 # My Arch Package List
 
-![Last Updated 14th March 2021](https://img.shields.io/badge/Last%20Updated-14th%20March%202021-blue)
+![Last Updated 20th March 2021](https://img.shields.io/badge/Last%20Updated-20th%20March%202021-blue)
 
 ## Core Packages
 
@@ -41,6 +41,7 @@
 * ripgrep (Better Grep)
 * spotifyd (Spotify Daemon)
 * playerctl
+* dbeaver (Database administration)
 
 ## Fonts
 
