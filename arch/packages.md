@@ -33,7 +33,7 @@
 * unrar
 * thermald (for keeping the PC temps from blowing itself up)
 * i7z (Intel CPU monitor)
-* kitty (Terminal!)
+* terminator (Terminal!)
 * dolphin (File manager)
 * htop (Running process list)
 * exa (Better ls)
