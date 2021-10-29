@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 # With thanks to Mathias Bynens https://mths.be/macos
+# With thanks to Rebecca Hill https://github.com/beerecca/dotfiles
 
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
