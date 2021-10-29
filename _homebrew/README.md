@@ -1,6 +1,6 @@
 ## Homebrew
 
-Special thanks to @beerecca for the initial brew file.
+Special thanks to [@beerecca](https://github.com/beerecca) for the initial brew file.
 
 Homebrew is "the missing package manager for macOS". Follow the instructions on the website to [install](https://brew.sh/).
 
