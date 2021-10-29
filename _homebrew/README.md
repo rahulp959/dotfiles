@@ -1,5 +1,7 @@
 ## Homebrew
 
+Special thanks to @beerecca for the initial brew file.
+
 Homebrew is "the missing package manager for macOS". Follow the instructions on the website to [install](https://brew.sh/).
 
 `tap`: Git repository of formulae that you can add to the list that brew tracks, updates, and installs from. The `homebrew/core` tap list (included when you download homebrew) is here: https://formulae.brew.sh/formula/.
