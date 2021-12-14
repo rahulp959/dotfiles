@@ -5,10 +5,10 @@
         "revision": "44a1e064d0cf9c3ef8d1820be7988f762f222cf5"
       },
       "homebrew/cask": {
-        "revision": "dbe4b28d446f81b684660ab4f93dffc7494ecea6"
+        "revision": "fca92d64f65380159ff36bc78daf4c08034111ef"
       },
       "homebrew/core": {
-        "revision": "e1567b5f2490dbeb7f09706a2ba12f2d34608bab"
+        "revision": "1cffb15a598c4aea964e8c4a49b3b48443684ed3"
       },
       "homebrew/services": {
         "revision": "5060c727f067790b55e93a044e4f48909c8363e9"
@@ -581,6 +581,15 @@
             "appdir": "~/Applications"
           }
         }
+      },
+      "microsoft-teams": {
+        "version": "1.4.00.29478",
+        "options": {
+          "full_name": "microsoft-teams",
+          "args": {
+            "appdir": "~/Applications"
+          }
+        }
       }
     }
   },
@@ -589,7 +598,7 @@
       "monterey": {
         "HOMEBREW_VERSION": "3.3.7",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "e1567b5f2490dbeb7f09706a2ba12f2d34608bab",
+        "Homebrew/homebrew-core": "1cffb15a598c4aea964e8c4a49b3b48443684ed3",
         "CLT": "13.1.0.0.1.1633545042",
         "Xcode": "13.1",
         "macOS": "12.0.1"
