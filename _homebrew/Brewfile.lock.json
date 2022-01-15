@@ -662,6 +662,15 @@
             "appdir": "~/Applications"
           }
         }
+      },
+      "plex": {
+        "version": "1.39.1.2763,300bb607",
+        "options": {
+          "full_name": "plex",
+          "args": {
+            "appdir": "~/Applications"
+          }
+        }
       }
     }
   },
