@@ -20,6 +20,7 @@ brew 'zsh'
 
 cask 'alfred'
 cask 'authy'
+cask 'dbeaver-community'
 cask 'docker'
 cask 'iina'
 cask 'iterm2'
