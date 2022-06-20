@@ -3,6 +3,7 @@ tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "homebrew/cask-versions"
+tap "hashicorp/tap"
 cask_args appdir: "~/Applications"
 
 brew 'awscli'
@@ -13,6 +14,7 @@ brew 'kcat'
 brew 'lolcat'
 brew 'neofetch'
 brew 'ruby'
+brew 'hashicorp/tap/terraform'
 brew 'tldr'
 brew 'tree'
 brew 'watchman'
