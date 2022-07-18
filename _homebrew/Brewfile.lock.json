@@ -5,10 +5,10 @@
         "revision": "48497882863432d8f0bd7dd6727df325a0f00b35"
       },
       "homebrew/cask": {
-        "revision": "f65ef39ab44422f661c9d8bf333a350fb3fac77e"
+        "revision": "51e37ac9310e5773d503dd054a01bd511c1bd34c"
       },
       "homebrew/core": {
-        "revision": "57eb6b5a67647692cc47f38f98e70c060ee10149"
+        "revision": "dbe03ef50c747eddf11e051a43502e0c952dea41"
       },
       "homebrew/services": {
         "revision": "0b653a3102b15789885b5d4fdb38b0930a8fd342"
@@ -699,6 +699,15 @@
             "appdir": "~/Applications"
           }
         }
+      },
+      "mimestream": {
+        "version": "0.36.2",
+        "options": {
+          "full_name": "mimestream",
+          "args": {
+            "appdir": "~/Applications"
+          }
+        }
       }
     }
   },
@@ -707,7 +716,7 @@
       "monterey": {
         "HOMEBREW_VERSION": "3.5.4",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "57eb6b5a67647692cc47f38f98e70c060ee10149",
+        "Homebrew/homebrew-core": "dbe03ef50c747eddf11e051a43502e0c952dea41",
         "CLT": "13.4.0.0.1.1651278267",
         "Xcode": "13.4.1",
         "macOS": "12.4"
