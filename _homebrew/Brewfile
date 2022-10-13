@@ -9,8 +9,6 @@ cask_args appdir: "~/Applications"
 brew 'awscli'
 brew 'git'
 brew 'gh'
-brew 'java'
-brew 'kafka'
 brew 'kcat'
 brew 'lolcat'
 brew 'neofetch'
