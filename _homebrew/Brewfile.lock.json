@@ -5,10 +5,10 @@
         "revision": "cf8a86177665825a7f30780e8fe1af333a0527c6"
       },
       "homebrew/cask": {
-        "revision": "d0d2514ecfab9c1ccffa4473a4d407dacdf7f207"
+        "revision": "2698884634817a86cebe624dca8b76abd6f95037"
       },
       "homebrew/core": {
-        "revision": "3fd67fee9bf25474948f0fcbb43807cb7386967d"
+        "revision": "ba085e0abea597f583f07e76010c31d30b1f5cf9"
       },
       "homebrew/services": {
         "revision": "4fe8e3c38c9a38f1d76c9d741f32bdfe8c59e340"
@@ -609,6 +609,10 @@
             }
           }
         }
+      },
+      "hashicorp/tap/vault": {
+        "version": "1.12.0",
+        "bottle": false
       }
     },
     "cask": {
@@ -790,7 +794,7 @@
       "monterey": {
         "HOMEBREW_VERSION": "3.6.6",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "3fd67fee9bf25474948f0fcbb43807cb7386967d",
+        "Homebrew/homebrew-core": "ba085e0abea597f583f07e76010c31d30b1f5cf9",
         "CLT": "14.0.0.0.1.1661618636",
         "Xcode": "14.0.1",
         "macOS": "12.6"
