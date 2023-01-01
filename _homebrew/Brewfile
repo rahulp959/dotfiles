@@ -23,6 +23,7 @@ brew 'zsh'
 
 cask 'alfred'
 cask 'authy'
+cask 'obsidian'
 cask 'dbeaver-community'
 cask 'docker'
 cask 'iina'
