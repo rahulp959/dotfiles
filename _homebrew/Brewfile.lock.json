@@ -14,7 +14,7 @@
         "revision": "f89962024105eb9d897a746406d0a46dfda49109"
       },
       "homebrew/cask-versions": {
-        "revision": "f14ba483eab55fa0f5b6d3cd9908baa90707d1eb"
+        "revision": "57df2312d52f30682965fa59810440a25c747b1e"
       },
       "hashicorp/tap": {
         "revision": "242f7b3c7553c240c4f09418f6510a3744a10b28"
@@ -827,7 +827,7 @@
         }
       },
       "dbeaver-community": {
-        "version": "23.0.1",
+        "version": "23.0.2",
         "options": {
           "full_name": "dbeaver-community",
           "args": {
