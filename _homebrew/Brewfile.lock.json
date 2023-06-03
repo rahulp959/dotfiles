@@ -892,6 +892,15 @@
             "appdir": "~/Applications"
           }
         }
+      },
+      "steelseries-gg": {
+        "version": "39.0.0",
+        "options": {
+          "full_name": "steelseries-gg",
+          "args": {
+            "appdir": "~/Applications"
+          }
+        }
       }
     }
   },
