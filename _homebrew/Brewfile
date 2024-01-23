@@ -2,6 +2,7 @@ tap "homebrew/bundle"
 tap "homebrew/services"
 tap "homebrew/cask-versions"
 tap "hashicorp/tap"
+tap "planetscale/tap"
 cask_args appdir: "~/Applications"
 
 brew 'awscli'
@@ -12,8 +13,6 @@ brew 'kcat'
 brew 'lolcat'
 brew 'neofetch'
 brew 'ruby'
-brew 'swiftformat'
-brew 'swiftlint'
 brew 'hashicorp/tap/terraform'
 brew 'hashicorp/tap/vault'
 brew 'planetscale/tap/pscale'
@@ -22,6 +21,7 @@ brew 'tree'
 brew 'watchman'
 brew 'zsh'
 
+cask '1password'
 cask 'alfred'
 cask 'authy'
 cask 'dbeaver-community'
@@ -41,5 +41,4 @@ cask 'slack'
 cask 'sloth'
 cask 'spotify'
 cask 'steelseries-gg'
-cask 'swiftformat-for-xcode'
 cask 'visual-studio-code-insiders'
