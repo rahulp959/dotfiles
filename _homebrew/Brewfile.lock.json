@@ -616,7 +616,7 @@
         }
       },
       "hashicorp/tap/terraform": {
-        "version": "1.7.3",
+        "version": "1.8.2",
         "bottle": false
       },
       "gh": {
@@ -664,7 +664,7 @@
         }
       },
       "hashicorp/tap/vault": {
-        "version": "1.15.5",
+        "version": "1.16.2",
         "bottle": false
       },
       "flyctl": {

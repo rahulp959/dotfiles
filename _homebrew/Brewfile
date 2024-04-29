@@ -2,7 +2,6 @@ tap "homebrew/bundle"
 tap "homebrew/services"
 tap "homebrew/cask-versions"
 tap "hashicorp/tap"
-tap "planetscale/tap"
 cask_args appdir: "~/Applications"
 
 brew 'awscli'
@@ -15,7 +14,6 @@ brew 'neofetch'
 brew 'ruby'
 brew 'hashicorp/tap/terraform'
 brew 'hashicorp/tap/vault'
-brew 'planetscale/tap/pscale'
 brew 'tldr'
 brew 'tree'
 brew 'watchman'
