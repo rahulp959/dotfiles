@@ -5,6 +5,7 @@ tap "hashicorp/tap"
 cask_args appdir: "~/Applications"
 
 brew 'awscli'
+brew 'fish'
 brew 'flyctl'
 brew 'git'
 brew 'gh'
