@@ -1,43 +1,34 @@
 tap "homebrew/bundle"
 tap "homebrew/services"
-tap "homebrew/cask-versions"
-tap "hashicorp/tap"
 cask_args appdir: "~/Applications"
 
+# Brews
 brew 'awscli'
+brew 'fastfetch'
 brew 'fish'
-brew 'flyctl'
 brew 'git'
 brew 'gh'
-brew 'kcat'
 brew 'lolcat'
-brew 'neofetch'
-brew 'ruby'
-brew 'hashicorp/tap/terraform'
-brew 'hashicorp/tap/vault'
 brew 'tldr'
-brew 'tree'
-brew 'watchman'
-brew 'zsh'
 
-cask '1password'
+# Application Casks
+cask '1password', args: { appdir: "/Applications" }
 cask 'alfred'
-cask 'authy'
-cask 'chatgpt'
-cask 'dbeaver-community'
-cask 'docker'
+cask 'firefox'
 cask 'iina'
-cask 'insomnia'
 cask 'iterm2'
-cask 'mimestream'
+cask 'itermai', args: { appdir: "/Applications" }
 cask 'miro'
 cask 'mullvadvpn'
-cask 'nosql-workbench'
 cask 'obsidian'
 cask 'plex'
-cask 'postman'
 cask 'slack'
-cask 'sloth'
+cask 'steam'
 cask 'spotify'
-cask 'steelseries-gg'
-cask 'visual-studio-code-insiders'
+cask 'stats'
+cask 'the-unarchiver'
+cask 'visual-studio-code@insiders'
+
+# Font Casks
+cask 'font-meslo-lg-nerd-font'
+cask 'font-monaspace'
