@@ -18,6 +18,8 @@ cask 'firefox'
 cask 'iina'
 cask 'iterm2'
 cask 'itermai', args: { appdir: "/Applications" }
+cask 'microsoft-teams'
+cask 'microsoft-auto-update'
 cask 'miro'
 cask 'mullvadvpn'
 cask 'obsidian'
