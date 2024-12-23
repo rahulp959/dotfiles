@@ -14,7 +14,9 @@ brew 'tldr'
 # Application Casks
 cask '1password', args: { appdir: "/Applications" }
 cask 'alfred'
+cask 'altserver'
 cask 'firefox'
+cask 'google-chrome'
 cask 'iina'
 cask 'iterm2'
 cask 'itermai', args: { appdir: "/Applications" }
@@ -27,9 +29,9 @@ cask 'plex'
 cask 'slack'
 cask 'steam'
 cask 'spotify'
-cask 'stats'
 cask 'the-unarchiver'
 cask 'visual-studio-code@insiders'
+cask 'zoom'
 
 # Font Casks
 cask 'font-meslo-lg-nerd-font'
