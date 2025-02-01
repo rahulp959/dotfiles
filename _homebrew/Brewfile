@@ -15,6 +15,7 @@ brew 'tldr'
 cask '1password', args: { appdir: "/Applications" }
 cask 'alfred'
 cask 'altserver'
+cask 'discord'
 cask 'firefox'
 cask 'google-chrome'
 cask 'iina'
