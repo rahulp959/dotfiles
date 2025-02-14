@@ -9,6 +9,7 @@ brew 'fish'
 brew 'git'
 brew 'gh'
 brew 'lolcat'
+brew 'tailscale'
 brew 'tldr'
 
 # Application Casks
