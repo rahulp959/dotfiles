@@ -15,10 +15,12 @@ brew 'tldr'
 cask '1password', args: { appdir: "/Applications" }
 cask 'alfred'
 cask 'altserver'
+cask 'dbeaver-community'
 cask 'discord'
 cask 'firefox'
 cask 'google-chrome'
 cask 'iina'
+cask 'insomnia'
 cask 'iterm2'
 cask 'itermai', args: { appdir: "/Applications" }
 cask 'microsoft-teams'
