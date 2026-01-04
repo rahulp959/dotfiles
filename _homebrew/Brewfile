@@ -18,13 +18,12 @@ cask 'alfred'
 cask 'altserver'
 cask 'calibre'
 cask 'claude-code'
-cask 'dbeaver-community', { greedy: true }
+cask 'dbeaver-community', greedy: true
 cask 'discord'
 cask 'docker-desktop'
 cask 'firefox'
 cask 'google-chrome'
 cask 'iina'
-cask 'insomnia'
 cask 'iterm2'
 cask 'itermai', args: { appdir: "/Applications" }
 cask 'jetbrains-toolbox'
