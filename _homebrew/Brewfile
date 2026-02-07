@@ -4,11 +4,14 @@ cask_args appdir: "~/Applications"
 
 # Brews
 brew 'awscli'
+brew 'composer'
 brew 'fastfetch'
 brew 'fish'
 brew 'git'
 brew 'gh'
 brew 'lolcat'
+brew 'opentofu'
+brew 'php@8.3'
 brew 'python'
 brew 'tldr'
 
