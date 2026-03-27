@@ -4,6 +4,7 @@ cask_args appdir: "~/Applications"
 
 # Brews
 brew 'awscli'
+brew 'bash'
 brew 'cocoapods'
 brew 'composer'
 brew 'curl'
@@ -26,6 +27,7 @@ cask 'altserver'
 cask 'android-studio'
 cask 'calibre'
 cask 'claude-code'
+cask 'codex'
 cask 'dbeaver-community', greedy: true
 cask 'discord'
 cask 'docker-desktop'
