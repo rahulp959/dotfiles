@@ -56,3 +56,4 @@ cask 'zoom'
 # Font Casks
 cask 'font-meslo-lg-nerd-font'
 cask 'font-monaspace'
+cask 'font-iosevka'
