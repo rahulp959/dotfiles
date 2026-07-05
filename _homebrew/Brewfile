@@ -5,6 +5,7 @@ cask_args appdir: "~/Applications"
 # Brews
 brew 'awscli'
 brew 'bash'
+brew 'cliclick'
 brew 'cocoapods'
 brew 'composer'
 brew 'curl'
@@ -33,6 +34,7 @@ cask 'discord'
 cask 'docker-desktop'
 cask 'firefox'
 cask 'ghostty@tip'
+cask 'google-chrome'
 cask 'iina'
 cask 'iterm2'
 cask 'itermai', args: { appdir: "/Applications" }
