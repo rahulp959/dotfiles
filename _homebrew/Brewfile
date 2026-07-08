@@ -26,13 +26,12 @@ brew 'pipx'
 cask '1password', args: { appdir: "/Applications" }
 cask 'altserver'
 cask 'android-studio'
-cask 'calibre'
 cask 'claude'
 cask 'codex', greedy: true
 cask 'dbeaver-community', greedy: true
 cask 'discord'
-cask 'docker-desktop'
 cask 'firefox'
+cask 'fluidvoice'
 cask 'ghostty@tip'
 cask 'google-chrome'
 cask 'iina'
