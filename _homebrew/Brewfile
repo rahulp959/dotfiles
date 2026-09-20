@@ -28,6 +28,7 @@ cask '1password', args: { appdir: "/Applications" }
 cask 'altserver'
 cask 'android-studio'
 cask 'claude'
+cask 'chatgpt'
 cask 'codex', greedy: true
 cask 'dbeaver-community', greedy: true
 cask 'discord'
