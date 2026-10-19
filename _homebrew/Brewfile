@@ -1,32 +1,23 @@
-tap "homebrew/bundle"
-tap "homebrew/services"
 cask_args appdir: "~/Applications"
 
 # Brews
 brew 'awscli'
 brew 'bash'
-brew 'cliclick'
-brew 'cocoapods'
-brew 'composer'
-brew 'curl'
 brew 'fastfetch'
 brew 'fd'
+brew 'ffmpeg'
 brew 'fish'
 brew 'git'
 brew 'gh'
 brew 'jq'
 brew 'lolcat'
 brew 'mole'
-brew 'nmap'
-brew 'openjdk@17'
-brew 'opentofu'
-brew 'php@8.3'
-brew 'pipx'
+brew 'xcode-build-server'
+brew 'xcodegen'
 
 # Application Casks
 cask '1password', args: { appdir: "/Applications" }
 cask 'altserver'
-cask 'android-studio'
 cask 'claude'
 cask 'chatgpt'
 cask 'codex', greedy: true
@@ -37,10 +28,7 @@ cask 'fluidvoice'
 cask 'ghostty@tip'
 cask 'google-chrome'
 cask 'iina'
-cask 'iterm2'
-cask 'itermai', args: { appdir: "/Applications" }
 cask 'jetbrains-toolbox'
-cask 'monodraw'
 cask 'mullvad-vpn'
 cask 'notion'
 cask 'obsidian'
@@ -53,7 +41,6 @@ cask 'spotify'
 cask 'tailscale-app'
 cask 'tg-pro'
 cask 'visual-studio-code@insiders'
-cask 'yaak'
 cask 'zoom'
 
 # Font Casks
