@@ -12,6 +12,7 @@ brew 'gh'
 brew 'jq'
 brew 'lolcat'
 brew 'mole'
+brew 'uv'
 brew 'xcode-build-server'
 brew 'xcodegen'
 

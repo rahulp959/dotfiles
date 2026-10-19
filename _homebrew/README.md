@@ -2,42 +2,41 @@
 
 Special thanks to [@beerecca](https://github.com/beerecca) for the initial brew file.
 
-Homebrew is "the missing package manager for macOS". Follow the instructions on the website to [install](https://brew.sh/).
+[Homebrew](https://brew.sh/) is "the missing package manager for macOS". Install it first, then run the commands below from this folder.
 
-`tap`: Git repository of formulae that you can add to the list that brew tracks, updates, and installs from. The `homebrew/core` tap list (included when you download homebrew) is here: https://formulae.brew.sh/formula/.
-`formula`: A package definition written in Ruby
-`cask`: An extension of Homebrew to install macOS native apps
+### Usage
 
-Once installed, install default packages by running this command in this folder.
-
+```sh
+brew bundle                # install anything missing, upgrade anything outdated
+brew bundle check          # is everything in the Brewfile installed and up to date?
+brew bundle cleanup        # dry run: what's installed but NOT in the Brewfile?
+brew bundle cleanup --force  # uninstall those (and their now-unused dependencies)
 ```
-brew bundle
-```
 
-- autojump: `j dirname` to jump to directory, `j -s` to view db, `j -a` to add path
-- awscli: `aws` for Amazon Web Services
-- bash
-- bash_completion
-- colordiff: `diff filename filename` for nice diffs
-- curl: `curl http://example.com -o filename` to download contents of url to a file
-- diff-so-fancy: `git diff` for nicer git diffs
-- ffmpeg: video, image and sound conversion
-- git
-- grep: `grep search_string path/to/file`
-- heroku
-- httpie: `http httpie.org` nicer curl alternative
-- hub: git helpers, automatically available on `git` commands
-- imagemagick: image converter
-- mongodb: Mongo DB
-- node
-- nvm
-- ruby
-- shellcheck: `shellcheck yourscript` linter for shell scripts
-- stow
-- tldr: short version of man docs
-- tree: show tree structure of files
-- vim
-- watchman
-- wget: `wget https://example.com/foo` download to a file called foo
-- yarn
-- zsh
+Run `brew bundle cleanup` (without `--force`) before committing Brewfile changes to catch drift, i.e. things installed by hand that never made it into the Brewfile.
+
+### Brewfile notes
+
+- `cask_args appdir: "~/Applications"` installs apps per-user; `1password` overrides this with `/Applications`, where 1Password expects to be installed (e.g. for its browser integration).
+- `greedy: true` (codex, dbeaver-community) makes `brew bundle` upgrade apps that would otherwise update themselves.
+- `homebrew/core` and `homebrew/cask` are served from Homebrew's API, so no `tap` lines are needed.
+
+### Why some things are here
+
+Entries whose purpose isn't obvious from the name, or that look unused but aren't:
+
+| Entry | Used by |
+|---|---|
+| `fastfetch`, `lolcat` | Fish greeting (`fish/config.fish`) |
+| `ffmpeg`, `xcodegen`, `xcode-build-server` | iptv-player project |
+| `mole` | Mac cleanup tool; the command is `mo` |
+| `uv` | Python tooling (`uv tool install` / `uvx` instead of pipx) |
+| `jetbrains-toolbox` | Launches Rider, so Rider never shows as "last opened" |
+| `visual-studio-code@insiders` | Launched via `code` (see `fish/functions/code.fish`) |
+| `font-iosevka` | Ghostty font (`Iosevka Term Extended`) |
+| `font-meslo-lg-nerd-font` | VS Code integrated terminal font |
+| `font-monaspace` | Kept on purpose, though no config currently references it |
+
+### Not managed here
+
+Installed by their own installers into `~/.local/bin`: `claude`, `codebase-memory-mcp`.
