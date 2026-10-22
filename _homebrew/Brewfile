@@ -24,6 +24,7 @@ cask 'chatgpt'
 cask 'codex', greedy: true
 cask 'dbeaver-community', greedy: true
 cask 'discord'
+cask 'docker-desktop'
 cask 'firefox'
 cask 'fluidvoice'
 cask 'ghostty@tip'
