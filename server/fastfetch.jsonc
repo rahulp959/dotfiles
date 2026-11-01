@@ -1,0 +1,101 @@
+// Login stats for the server: fish runs fastfetch as its greeting on every
+// interactive login. setup.sh copies this to ~/.config/fastfetch/config.jsonc.
+//
+// Rule: the whole run stays under 0.5 s and nothing touches the network.
+// Every custom command reads a local file or asks a local daemon, is capped
+// with `timeout`, and prints "unknown" instead of an error if its source is missing.
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "source": "ubuntu"
+  },
+  "modules": [
+    // Identity
+    "title",
+    "separator",
+    "os",
+    "host",
+    "kernel",
+    "initsystem",
+    "locale",
+    {
+      "type": "datetime",
+      "key": "Time",
+      "format": "{year}-{month-pretty}-{day-pretty} {hour-pretty}:{minute-pretty} UTC"
+    },
+
+    // Health
+    "uptime",
+    "loadavg",
+    "processes",
+    "users",
+    "cpu",
+    {
+      "type": "cpuusage",
+      "waitTime": 100
+    },
+    "memory",
+    "swap",
+    {
+      "type": "disk",
+      "folders": "/"
+    },
+
+    // Network: the tailnet address and the public one (blocked by both firewalls)
+    {
+      "type": "localip",
+      "key": "Tailnet IP",
+      "namePrefix": "tailscale0",
+      // By default only the interface with the default route (eth0) is shown.
+      "defaultRouteOnly": false,
+      "showIpv4": true,
+      "showIpv6": false
+    },
+    {
+      "type": "localip",
+      "key": "Public IP",
+      "namePrefix": "eth0",
+      "showIpv4": true,
+      "showIpv6": true
+    },
+
+    // Software
+    "packages",
+    "shell",
+
+    // Server state
+    {
+      "type": "command",
+      "key": "Tailscale",
+      "text": "s=$(timeout 0.3 tailscale status --json --peers=false 2>/dev/null | grep -o '\"BackendState\": \"[A-Za-z]*\"' | cut -d'\"' -f4); echo \"${s:-unknown}\""
+    },
+    {
+      "type": "command",
+      "key": "Reboot",
+      "text": "if [ -f /var/run/reboot-required ]; then echo 'pending (automatic at 04:00 UTC)'; else echo 'none pending'; fi"
+    },
+    {
+      "type": "command",
+      "key": "Ubuntu Pro",
+      "text": "f=/var/lib/ubuntu-advantage/status.json; if [ ! -r $f ]; then echo unknown; elif grep -q '\"attached\": true' $f; then echo attached; else echo 'not attached'; fi"
+    },
+    {
+      "type": "command",
+      "key": "Livepatch",
+      "text": "timeout 0.3 python3 -I -c 'import json,os; d=json.load(open(\"/var/lib/ubuntu-advantage/status.json\")); s=[x[\"status\"] for x in d[\"services\"] if x[\"name\"]==\"livepatch\"]; n=len(os.listdir(\"/sys/kernel/livepatch\")); print(\"%s, %d live patch(es) applied\" % (s[0] if s else \"unknown\", n))' 2>/dev/null || echo unknown"
+    },
+    {
+      "type": "command",
+      "key": "Updates",
+      "text": "awk '/can be applied immediately/ {print $1 \" pending\"; f=1} END {if (!f) print \"unknown\"}' /var/lib/update-notifier/updates-available 2>/dev/null || echo unknown"
+    },
+    {
+      "type": "command",
+      "key": "Last auto-update",
+      "text": "t=$(timeout 0.3 systemctl show -p ExecMainExitTimestamp --value apt-daily-upgrade.service 2>/dev/null); echo \"${t:-not yet}\""
+    },
+
+    "break",
+    "colors"
+  ]
+}
